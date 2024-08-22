@@ -21,13 +21,16 @@ const RequestSuccess = async ({
     <div className=" flex h-screen max-h-screen px-[5%]">
       <div className="success-img">
         <Link href="/">
+        <div className="flex">
           <Image
-            src="/assets/icons/logo-full.svg"
+            src="/assets/images/logo.png"
             height={1000}
             width={1000}
-            alt="logo"
-            className="h-10 w-fit"
+            alt="patient"
+            className="mb-12 h-10 w-fit"
           />
+          <div className="text-3xl ml-2 mt-1 font-sans font-extrabold ">AppointMed</div>
+          </div>
         </Link>
 
         <section className="flex flex-col items-center">
@@ -73,7 +76,7 @@ const RequestSuccess = async ({
           </Link>
         </Button>
 
-        <p className="copyright">© 2024 CarePluse</p>
+        <p className="copyright">© 2024 AppointMed</p>
       </div>
     </div>
   );

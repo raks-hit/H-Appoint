@@ -61,7 +61,7 @@ function PatientForm() {
         control={form.control}
         name="name"
         label="Full name"
-        placeholder="John Doe"
+        placeholder="Apna Naam Daal Bhai"
         iconSrc="/assets/icons/user.svg"
         iconAlt="user"
       />
@@ -71,7 +71,7 @@ function PatientForm() {
         control={form.control}
         name="email"
         label="Email"
-        placeholder="johndoe@gmail.com"
+        placeholder="apniemaildaal@gmail.com"
         iconSrc="/assets/icons/email.svg"
         iconAlt="email"
       />
@@ -81,7 +81,7 @@ function PatientForm() {
         control={form.control}
         name="phone"
         label="Phone number"
-        placeholder="(555) 123-4567"
+        placeholder="9876543210"
       />
 
       <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>

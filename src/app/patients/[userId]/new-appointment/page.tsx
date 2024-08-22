@@ -10,13 +10,16 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
+        <div className="flex">
           <Image
-            src="/assets/icons/logo-full.svg"
+            src="/assets/images/logo.png"
             height={1000}
             width={1000}
-            alt="logo"
+            alt="patient"
             className="mb-12 h-10 w-fit"
           />
+          <div className="text-3xl ml-2 mt-1 font-sans font-extrabold ">AppointMed</div>
+          </div>
 
           <AppointmentForm
             patientId={patient?.$id}
@@ -24,7 +27,7 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             type="create"
           />
 
-          <p className="copyright mt-10 py-12">© 2024 CarePluse</p>
+          <p className="copyright mt-10 py-12">© 2024 AppointMed</p>
         </div>
       </section>
 
